@@ -1,0 +1,119 @@
+<VI syntaxVersion="11" LVversion="10008000" revision="51" name="DMM 4040 - Front Panel.vi">
+<TITLE></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID="83" type="Cluster" name="Error">
+		<DESC>The error in cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.
+
+The pop-up option Explain Error (or Explain Warning) gives more information about the error displayed. </DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID="79" type="Boolean" name="status">
+				<DESC>The status boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.
+
+The pop-up option Explain Error (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID="22" order="0" type="Boolean Text"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID="80" type="Numeric" name="code">
+				<DESC>The code input identifies the error or warning.
+
+The pop-up option Explain Error (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID="81" type="String" name="source">
+				<DESC>The source string describes the origin of the error or warning.
+
+The pop-up option Explain Error (or Explain Warning) gives more information about the error displayed.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID="11" order="0" type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Exit">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="22" order="0" type="Boolean Text"><MLABEL><STRINGS><STRING>Exit</STRING></STRINGS></MLABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="79" type="Boolean" name="Activity">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="81" type="String" name="Message">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="11" order="0" type="Text"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT></DEFAULT>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="Logo">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="87" type="Ring" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="100" type="Type Definition" name="Measurement Type">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="8010" order="0" type="Cursor Buttons">
+				<CONTROL ID="87" type="Ring" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID="12" order="0" type="Ring Text"><MLABEL><STRINGS><STRING>Capacitance</STRING><STRING>Current : AC</STRING><STRING>Current : DC</STRING><STRING>Voltage : AC</STRING><STRING>Voltage : DC</STRING><STRING>Voltage : DC : Ratio</STRING><STRING>Resistance : 2 wire</STRING><STRING>FResistance : 4 wire</STRING><STRING>Frequency</STRING><STRING>Period</STRING><STRING>Temperature : RTD : 2 wire</STRING><STRING>Temperature : FRTD : 4 wire</STRING><STRING>Diode</STRING><STRING>Continuity</STRING></STRINGS></MLABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID="80" type="Numeric" name="Value">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<LABEL><STEXT>Tektronix : DMM 4040</STEXT></LABEL>
+	<CONTROL ID="81" type="String" name="Name">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID="11" order="0" type="Text"><LABEL><STEXT>DMM 4040</STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><STRING></STRING></DEFAULT>
+	</CONTROL>
+</CONTENT>
+</VI>
+
+
