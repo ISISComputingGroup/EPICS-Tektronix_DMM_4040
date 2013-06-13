@@ -2,7 +2,7 @@
 record(bi, "$(P)Exit_RBV")
 {
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn(ex1,0,0)Exit")
+    field(INP,  "@asyn(frontpanel,0,0)Exit")
     field(SCAN, ".1 second")
     field(ZNAM, "Exit")
     field(ONAM, "")
@@ -11,7 +11,7 @@ record(bi, "$(P)Exit_RBV")
 record(bo, "$(P)Exit")
 {
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn(ex1,0,0)Exit")
+    field(OUT,  "@asyn(frontpanel,0,0)Exit")
     field(ZNAM, "Exit")
     field(ONAM, "")
 }
@@ -20,7 +20,7 @@ record(bo, "$(P)Exit")
 record(bi, "$(P)Activity_RBV")
 {
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn(ex1,0,0)Activity")
+    field(INP,  "@asyn(frontpanel,0,0)Activity")
     field(SCAN, ".1 second")
     field(ZNAM, "")
     field(ONAM, "")
@@ -29,7 +29,7 @@ record(bi, "$(P)Activity_RBV")
 record(bo, "$(P)Activity")
 {
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn(ex1,0,0)Activity")
+    field(OUT,  "@asyn(frontpanel,0,0)Activity")
     field(ZNAM, "")
     field(ONAM, "")
 }
@@ -38,46 +38,46 @@ record(bo, "$(P)Activity")
 record(stringin, "$(P)Message_RBV")
 {
     field(DTYP, "asynOctetRead")
-    field(INP,  "@asyn(ex1,0,0)Message")
+    field(INP,  "@asyn(frontpanel,0,0)Message")
     field(SCAN, ".1 second")
 }
 
 record(stringout, "$(P)Message")
 {
     field(DTYP, "asynOctetWrite")
-    field(OUT,  "@asyn(ex1,0,0)Message")
+    field(OUT,  "@asyn(frontpanel,0,0)Message")
 }
 
 
 record(mbbi, "$(P)Measurement_Type_RBV")
 {
     field(DTYP, "asynInt32")
-    field(INP,  "@asyn(ex1,0,0)Measurement_Type")
+    field(INP,  "@asyn(frontpanel,0,0)Measurement_Type")
     field(SCAN, ".1 second")
 
     field(ZRVL, 0)
     field(ZRST, "Capacitance")
         
     field(ONVL, 1)
-    field(ONST, "Current : AC")
+    field(ONST, "Current: AC")
         
     field(TWVL, 2)
-    field(TWST, "Current : DC")
+    field(TWST, "Current: DC")
         
     field(THVL, 3)
-    field(THST, "Voltage : AC")
+    field(THST, "Voltage: AC")
         
     field(FRVL, 4)
-    field(FRST, "Voltage : DC")
+    field(FRST, "Voltage: DC")
         
     field(FVVL, 5)
-    field(FVST, "Voltage : DC : Ratio")
+    field(FVST, "Voltage: DC: Ratio")
         
     field(SXVL, 6)
-    field(SXST, "Resistance : 2 wire")
+    field(SXST, "Resistance: 2 wire")
         
     field(SVVL, 7)
-    field(SVST, "FResistance : 4 wire")
+    field(SVST, "FResistance: 4 wire")
         
     field(EIVL, 8)
     field(EIST, "Frequency")
@@ -86,10 +86,10 @@ record(mbbi, "$(P)Measurement_Type_RBV")
     field(NIST, "Period")
         
     field(TEVL, 10)
-    field(TEST, "Temperature : RTD : 2 wire")
+    field(TEST, "Temperature: RTD: 2 wire")
         
     field(ELVL, 11)
-    field(ELST, "Temperature : FRTD : 4 wire")
+    field(ELST, "Temperature: FRTD: 4 wire")
         
     field(TVVL, 12)
     field(TVST, "Diode")
@@ -102,31 +102,31 @@ record(mbbi, "$(P)Measurement_Type_RBV")
 record(mbbo, "$(P)Measurement_Type")
 {
     field(DTYP, "asynInt32")
-    field(OUT,  "@asyn(ex1,0,0)Measurement_Type")
+    field(OUT,  "@asyn(frontpanel,0,0)Measurement_Type")
 
     field(ZRVL, 0)
     field(ZRST, "Capacitance")
         
     field(ONVL, 1)
-    field(ONST, "Current : AC")
+    field(ONST, "Current: AC")
         
     field(TWVL, 2)
-    field(TWST, "Current : DC")
+    field(TWST, "Current: DC")
         
     field(THVL, 3)
-    field(THST, "Voltage : AC")
+    field(THST, "Voltage: AC")
         
     field(FRVL, 4)
-    field(FRST, "Voltage : DC")
+    field(FRST, "Voltage: DC")
         
     field(FVVL, 5)
-    field(FVST, "Voltage : DC : Ratio")
+    field(FVST, "Voltage: DC: Ratio")
         
     field(SXVL, 6)
-    field(SXST, "Resistance : 2 wire")
+    field(SXST, "Resistance: 2 wire")
         
     field(SVVL, 7)
-    field(SVST, "FResistance : 4 wire")
+    field(SVST, "FResistance: 4 wire")
         
     field(EIVL, 8)
     field(EIST, "Frequency")
@@ -135,10 +135,10 @@ record(mbbo, "$(P)Measurement_Type")
     field(NIST, "Period")
         
     field(TEVL, 10)
-    field(TEST, "Temperature : RTD : 2 wire")
+    field(TEST, "Temperature: RTD: 2 wire")
         
     field(ELVL, 11)
-    field(ELST, "Temperature : FRTD : 4 wire")
+    field(ELST, "Temperature: FRTD: 4 wire")
         
     field(TVVL, 12)
     field(TVST, "Diode")
@@ -152,7 +152,7 @@ record(mbbo, "$(P)Measurement_Type")
 record(ai, "$(P)Value_RBV")
 {
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(ex1,0,0)Value")
+    field(INP,  "@asyn(frontpanel,0,0)Value")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
@@ -160,7 +160,7 @@ record(ai, "$(P)Value_RBV")
 record(ao, "$(P)Value")
 {
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(ex1,0,0)Value")
+    field(OUT,  "@asyn(frontpanel,0,0)Value")
     field(PREC, "3")
 }
 
@@ -168,13 +168,13 @@ record(ao, "$(P)Value")
 record(stringin, "$(P)Name_RBV")
 {
     field(DTYP, "asynOctetRead")
-    field(INP,  "@asyn(ex1,0,0)Name")
+    field(INP,  "@asyn(frontpanel,0,0)Name")
     field(SCAN, ".1 second")
 }
 
 record(stringout, "$(P)Name")
 {
     field(DTYP, "asynOctetWrite")
-    field(OUT,  "@asyn(ex1,0,0)Name")
+    field(OUT,  "@asyn(frontpanel,0,0)Name")
 }
 

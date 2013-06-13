@@ -11,8 +11,11 @@ cd ${TOP}
 dbLoadDatabase "dbd/Tektronix_DMM_4040.dbd"
 Tektronix_DMM_4040_registerRecordDeviceDriver pdbbase
 
+lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/Tektronix_DMM_4040App/protocol/Tektronix_DMM_4040.xml", "", 0)
+#lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/Tektronix_DMM_4040App/protocol/Tektronix_DMM_4040.xml", "ndxchipir", 6, "", "spudulike", "reliablebeam")
+
 ## Load record instances
-#dbLoadRecords("db/xxx.db","user=kht13119Host")
+dbLoadRecords("db/Tektronix_DMM_4040.db","P=ex1:")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit

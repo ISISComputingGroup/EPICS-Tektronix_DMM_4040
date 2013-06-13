@@ -16,7 +16,7 @@ DBD += Tektronix_DMM_4040.dbd
 Tektronix_DMM_4040_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#Tektronix_DMM_4040_DBD += xxx.dbd
+Tektronix_DMM_4040_DBD += lvDCOM.dbd
 
 # Add all the support libraries needed by this IOC
 #Tektronix_DMM_4040_LIBS += xxx
