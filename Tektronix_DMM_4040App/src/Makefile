@@ -20,6 +20,8 @@ Tektronix_DMM_4040_DBD += lvDCOM.dbd
 
 # Add all the support libraries needed by this IOC
 #Tektronix_DMM_4040_LIBS += xxx
+Tektronix_DMM_4040_LIBS += lvDCOMSupport asyn autosave
+Tektronix_DMM_4040_SYS_LIBS_WIN32 += msxml2
 
 # Tektronix_DMM_4040_registerRecordDeviceDriver.cpp derives from Tektronix_DMM_4040.dbd
 Tektronix_DMM_4040_SRCS += Tektronix_DMM_4040_registerRecordDeviceDriver.cpp
@@ -39,6 +41,3 @@ Tektronix_DMM_4040_LIBS += $(EPICS_BASE_IOC_LIBS)
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
-
-Tektronix_DMM_4040_LIBS +=  lvDCOMSupport asyn autosave
-Tektronix_DMM_4040_SYS_LIBS_WIN32 += msxml2
