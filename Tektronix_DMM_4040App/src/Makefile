@@ -40,5 +40,5 @@ include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
 
-Tektronix_DMM_4040_LIBS +=  lvDCOMSupport asyn
+Tektronix_DMM_4040_LIBS +=  lvDCOMSupport asyn autosave
 Tektronix_DMM_4040_SYS_LIBS_WIN32 += msxml2
