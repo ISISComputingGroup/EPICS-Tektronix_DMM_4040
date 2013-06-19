@@ -15,7 +15,7 @@ Tektronix_DMM_4040_registerRecordDeviceDriver pdbbase
 lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/Tektronix_DMM_4040App/protocol/Tektronix_DMM_4040.xml", "ndxchipir", 6, "", "spudulike", "reliablebeam")
 
 ## Load record instances
-dbLoadRecords("db/Tektronix_DMM_4040.db","P=ex1:")
+dbLoadRecords("db/Tektronix_DMM_4040.db","P=DMM4040:")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit
