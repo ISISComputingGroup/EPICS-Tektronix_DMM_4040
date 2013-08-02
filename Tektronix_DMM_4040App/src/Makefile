@@ -16,11 +16,11 @@ DBD += Tektronix_DMM_4040.dbd
 Tektronix_DMM_4040_DBD += base.dbd
 
 # Include dbd files from all support applications:
-Tektronix_DMM_4040_DBD += lvDCOM.dbd
+Tektronix_DMM_4040_DBD += lvDCOM.dbd devIocStats.dbd
 
 # Add all the support libraries needed by this IOC
 #Tektronix_DMM_4040_LIBS += xxx
-Tektronix_DMM_4040_LIBS += lvDCOMSupport asyn autosave
+Tektronix_DMM_4040_LIBS += lvDCOMSupport asyn autosave devIocStats
 Tektronix_DMM_4040_SYS_LIBS_WIN32 += msxml2
 
 # Tektronix_DMM_4040_registerRecordDeviceDriver.cpp derives from Tektronix_DMM_4040.dbd

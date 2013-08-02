@@ -5,6 +5,9 @@
 
 < envPaths
 
+epicsEnvSet "IOCNAME" "$(P=$(MYPVPREFIX))DMM4040"
+epicsEnvSet "IOCSTATS_DB" "$(DEVIOCSTATS)/db/iocAdminSoft.db"
+
 cd ${TOP}
 
 ## Register all support components
@@ -15,7 +18,8 @@ Tektronix_DMM_4040_registerRecordDeviceDriver pdbbase
 lvDCOMConfigure("frontpanel", "frontpanel", "$(TOP)/Tektronix_DMM_4040App/protocol/Tektronix_DMM_4040.xml", "ndxchipir", 6, "", "spudulike", "reliablebeam")
 
 ## Load record instances
-dbLoadRecords("db/Tektronix_DMM_4040.db","P=DMM4040:")
+dbLoadRecords("db/Tektronix_DMM_4040.db","P=$(IOCNAME):")
+dbLoadRecords("$(IOCSTATS_DB)","IOC=$(IOCNAME)")
 
 cd ${TOP}/iocBoot/${IOC}
 iocInit
