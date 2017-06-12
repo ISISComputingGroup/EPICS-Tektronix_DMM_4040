@@ -13,7 +13,7 @@ PROD_IOC = Tektronix_DMM_4040
 DBD += Tektronix_DMM_4040.dbd
 
 # Tektronix_DMM_4040.dbd will be made up from these files:
-Tektronix_DMM_4040_DBD += base.dbd
+Tektronix_DMM_4040_DBD += base.dbd asyn.dbd
 
 # Include dbd files from all support applications:
 Tektronix_DMM_4040_DBD += lvDCOM.dbd devIocStats.dbd
